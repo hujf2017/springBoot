@@ -5,18 +5,21 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
-@EnableAutoConfiguration
+//@Controller
+@RestController
 public class SpringController {
 	
-	@RequestMapping("/hello")
-	@ResponseBody
+	@RequestMapping("/hi")
+	//@ResponseBody //带上此注解，返回resuktful,不使用注解，会进行跳转
 	public String yes(){
 		return "hello";
 		}
 	
-	public static void main(String[] args){
-		SpringApplication.run(SpringController.class, args);
+	@RequestMapping("/ok")
+	//@ResponseBody
+	public String ok(){
+		return "ok";
 	}
 }
