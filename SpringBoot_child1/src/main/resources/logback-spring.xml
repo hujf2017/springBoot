@@ -36,10 +36,31 @@
 		<appender-ref ref="console"/>
 		<appender-ref ref="file"/>
 	</root>	
-	<!-- 单独配置包的日志 -->
+	<!-- logger单独配置包的日志 -->
 	<logger name="com.hd.controller"></logger>
 	
-	<logger name="com.hd.controller.SpringController" level="WARN" additivity="false">
+	<logger name="com.hd.controller.SpringController" level="DEBUG" additivity="false">
 		<appender-ref ref="console"/>
 	</logger>
+	
+	
+	<springProfile name ="test,dev">
+		<logger name="com.hd.controller" level="INFO"></logger>
+	</springProfile>
+	<springProfile name ="prod">
+		<logger name="com.hd.controller" level="ERROR"></logger>
+	</springProfile>
+	
 </configuration>
+
+
+
+
+
+
+
+
+
+
+
+

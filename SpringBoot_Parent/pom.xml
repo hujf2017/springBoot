@@ -20,5 +20,6 @@
   </dependencyManagement>
   <modules>
   	<module>SpringBoot_child1</module>
+  	<module>SpringBoot_child2</module>
   </modules>
 </project>
