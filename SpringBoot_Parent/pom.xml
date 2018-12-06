@@ -22,5 +22,6 @@
   	<module>SpringBoot_child1</module>
   	<module>SpringBoot_child2</module>
   	<module>SpringBoot_child3</module>
+  	<module>SpringBoot_child4</module>
   </modules>
 </project>
