@@ -24,5 +24,7 @@
   	<module>SpringBoot_child3</module>
   	<module>SpringBoot_child4</module>
   	<module>SpringBoot_child5</module>
+  	<module>SpringBoot_child6</module>
+  	<module>springboot_child7</module>
   </modules>
 </project>
